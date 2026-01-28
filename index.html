@@ -3,428 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diplomado Integral en Yoga – Anasura Yoga</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Diplomado en Yoga – Anasura Yoga School</title>
+    <meta name="description" content="Nuestro diplomado en yoga ofrece una experiencia integral que abarca el conocimiento, la práctica, la aplicación y la enseñanza de esta disciplina milenaria.">
+    
+    <!-- Fonts - Better contrast and readability -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="main-nav">
+    <nav class="main-nav" id="mainNav">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">☯</span>
-                <span class="logo-text">Anasura Yoga</span>
+                <img src="images/logo.png" alt="Anasura Yoga" class="logo-img">
             </a>
-            <button class="nav-toggle" aria-label="Menú">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon"></i>
             </button>
-            <ul class="nav-links">
-                <li><a href="#about">Programa</a></li>
-                <li><a href="#modules">Temario</a></li>
-                <li><a href="#schedule">Horario</a></li>
-                <li><a href="#instructors">Instructores</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#academia">Academia</a></li>
+                <li><a href="#programa">Programa</a></li>
+                <li><a href="#temario">Temario</a></li>
+                <li><a href="#logistica">Logística</a></li>
+                <li><a href="#instructores">Instructores</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#inscription" class="nav-cta">Inscribirme</a></li>
+                <li><a href="#inscripcion" class="nav-cta">
+                    <i data-lucide="message-circle"></i>
+                    Inscribirme
+                </a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero" id="hero">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-pattern"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">Nueva Generación 2025</div>
-            <h1 class="hero-title">
-                <span class="title-line">Diplomado Integral</span>
-                <span class="title-line accent">en Yoga</span>
-            </h1>
-            <p class="hero-subtitle">Experiencia Transformadora</p>
-            <p class="hero-description">Profundiza en cuerpo, mente y espíritu a través de una formación integral que combina la sabiduría ancestral del yoga con la ciencia moderna.</p>
-            <div class="hero-buttons">
-                <a href="#inscription" class="btn btn-primary">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                    </svg>
-                    Inscribirme vía WhatsApp
-                </a>
-                <a href="#modules" class="btn btn-secondary">
-                    <span>Ver Temario</span>
-                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">200+</span>
-                    <span class="stat-label">Horas de formación</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">6</span>
-                    <span class="stat-label">Módulos intensivos</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">EC0205</span>
-                    <span class="stat-label">Certificación oficial</span>
-                </div>
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="hero-image-wrapper">
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80" alt="Práctica de yoga">
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="sparkles"></i>
+                    <span>Nueva Generación 2025</span>
                 </div>
-                <div class="floating-card card-1">
-                    <span class="card-icon">🧘</span>
-                    <span class="card-text">Práctica diaria</span>
+                
+                <h1 class="hero-title">
+                    Diplomado Integral<br>
+                    <span class="title-accent">en Yoga</span>
+                </h1>
+                
+                <p class="hero-subtitle">Una experiencia transformadora que abarca el conocimiento, la práctica, la aplicación y la enseñanza de esta disciplina milenaria.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i data-lucide="award"></i>
+                        <span>Certificación EC0205</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="clock"></i>
+                        <span>200+ Horas</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="users"></i>
+                        <span>Yoga Alliance</span>
+                    </div>
                 </div>
-                <div class="floating-card card-2">
-                    <span class="card-icon">📚</span>
-                    <span class="card-text">Material incluido</span>
+                
+                <div class="hero-cta">
+                    <a href="https://api.whatsapp.com/send/?phone=528126592009&text=Hola,%20me%20interesa%20el%20Diplomado%20en%20Yoga" class="btn btn-primary" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        ¡Inscríbete aquí!
+                    </a>
+                    <a href="#programa" class="btn btn-secondary">
+                        <span>Conocer más</span>
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-price">
+                    <span class="price-label">Costo por módulo</span>
+                    <span class="price-amount">$2,499 MXN</span>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Práctica de Yoga">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i data-lucide="heart"></i>
+                        <span>Bienestar Integral</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i data-lucide="graduation-cap"></i>
+                        <span>Certificación Oficial</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        
+        <div class="scroll-hint">
             <span>Explorar</span>
-            <div class="scroll-line"></div>
+            <i data-lucide="chevron-down"></i>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- Academia Section -->
+    <section class="academia" id="academia">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">Acerca del Programa</span>
-                    <h2 class="section-title">Una formación que trasciende lo físico</h2>
-                    <p class="about-lead">
-                        Nuestro Diplomado Integral en Yoga es una experiencia transformadora diseñada para quienes desean profundizar en la práctica y enseñanza del yoga de manera auténtica y profesional.
-                    </p>
-                    <p class="about-text">
-                        A lo largo de seis módulos intensivos, explorarás las raíces filosóficas del yoga, comprenderás la anatomía desde una perspectiva funcional, y desarrollarás las habilidades necesarias para guiar a otros en su camino hacia el bienestar integral.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Metodología integral</h4>
-                                <p>Combina teoría, práctica y experiencia vivencial</p>
-                            </div>
+            <div class="academia-grid">
+                <div class="academia-images">
+                    <div class="img-stack">
+                        <div class="img-wrapper img-1">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=80" alt="Meditación">
                         </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M12 6v6l4 2"/>
-                                </svg>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Horarios flexibles</h4>
-                                <p>Sesiones de fin de semana adaptadas a tu ritmo</p>
-                            </div>
+                        <div class="img-wrapper img-2">
+                            <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=500&q=80" alt="Práctica de Yoga">
                         </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22 4 12 14.01 9 11.01"/>
-                                </svg>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Certificación oficial</h4>
-                                <p>Reconocimiento EC0205 con validez nacional</p>
-                            </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="exp-icon">
+                            <i data-lucide="star"></i>
+                        </div>
+                        <div class="exp-content">
+                            <span class="exp-number">8+</span>
+                            <span class="exp-text">Años de experiencia</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="about-image-stack">
-                        <div class="about-image img-1">
-                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" alt="Meditación">
-                        </div>
-                        <div class="about-image img-2">
-                            <img src="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=600&q=80" alt="Práctica grupal">
-                        </div>
-                        <div class="experience-badge">
-                            <span class="badge-number">15+</span>
-                            <span class="badge-text">años de experiencia</span>
-                        </div>
+                
+                <div class="academia-content">
+                    <div class="section-label">
+                        <i data-lucide="home"></i>
+                        <span>Nuestra Academia</span>
                     </div>
-                </div>
-            </div>
-            
-            <div class="learning-outcomes">
-                <h3>Al finalizar el diplomado podrás:</h3>
-                <div class="outcomes-grid">
-                    <div class="outcome">
-                        <span class="outcome-number">01</span>
-                        <p>Comprender la filosofía y los principios fundamentales del yoga</p>
-                    </div>
-                    <div class="outcome">
-                        <span class="outcome-number">02</span>
-                        <p>Aplicar conocimientos anatómicos para una práctica segura</p>
-                    </div>
-                    <div class="outcome">
-                        <span class="outcome-number">03</span>
-                        <p>Diseñar y guiar secuencias de asanas efectivas</p>
-                    </div>
-                    <div class="outcome">
-                        <span class="outcome-number">04</span>
-                        <p>Integrar técnicas de pranayama y meditación</p>
-                    </div>
-                    <div class="outcome">
-                        <span class="outcome-number">05</span>
-                        <p>Desarrollar tu práctica personal de forma consistente</p>
-                    </div>
-                    <div class="outcome">
-                        <span class="outcome-number">06</span>
-                        <p>Iniciar tu camino profesional como instructor certificado</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modules Section -->
-    <section class="modules" id="modules">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Temario Completo</span>
-                <h2 class="section-title">Currículo del Diplomado</h2>
-                <p class="section-description">Seis módulos diseñados para brindarte una formación completa y profunda en todos los aspectos del yoga.</p>
-            </div>
-            
-            <div class="modules-grid">
-                <div class="module-card" data-module="1">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <svg viewBox="0 0 64 64" fill="none">
-                                <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/>
-                                <path d="M32 16v32M24 24l8-8 8 8M24 40l8 8 8-8" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <span class="module-number">Módulo 01</span>
-                    </div>
-                    <h3 class="module-title">Filosofía del Yoga</h3>
-                    <p class="module-description">Explora los textos clásicos, los Yoga Sutras de Patanjali, y las raíces espirituales que fundamentan la práctica milenaria del yoga.</p>
-                    <ul class="module-topics">
-                        <li>Yoga Sutras de Patanjali</li>
-                        <li>Los 8 pasos del yoga</li>
-                        <li>Historia y tradiciones</li>
-                        <li>Ética del yoga (Yamas y Niyamas)</li>
-                    </ul>
-                </div>
-
-                <div class="module-card" data-module="2">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <svg viewBox="0 0 64 64" fill="none">
-                                <ellipse cx="32" cy="32" rx="16" ry="28" stroke="currentColor" stroke-width="2"/>
-                                <line x1="32" y1="4" x2="32" y2="60" stroke="currentColor" stroke-width="2"/>
-                                <circle cx="32" cy="20" r="4" fill="currentColor"/>
-                                <circle cx="32" cy="44" r="4" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <span class="module-number">Módulo 02</span>
-                    </div>
-                    <h3 class="module-title">Anatomía y Biomecánica</h3>
-                    <p class="module-description">Comprende el cuerpo humano desde una perspectiva funcional para una práctica segura y efectiva de las asanas.</p>
-                    <ul class="module-topics">
-                        <li>Sistema musculoesquelético</li>
-                        <li>Alineación postural</li>
-                        <li>Prevención de lesiones</li>
-                        <li>Adaptaciones y modificaciones</li>
-                    </ul>
-                </div>
-
-                <div class="module-card" data-module="3">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <svg viewBox="0 0 64 64" fill="none">
-                                <path d="M32 8c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24S45.255 8 32 8z" stroke="currentColor" stroke-width="2"/>
-                                <path d="M32 8c-4 8 0 16-4 24s4 16 4 24" stroke="currentColor" stroke-width="2"/>
-                                <path d="M32 8c4 8 0 16 4 24s-4 16-4 24" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <span class="module-number">Módulo 03</span>
-                    </div>
-                    <h3 class="module-title">Temas Generales y Salud Holística</h3>
-                    <p class="module-description">Integra el yoga con principios de salud integral, nutrición consciente y el equilibrio de los sistemas energéticos del cuerpo.</p>
-                    <ul class="module-topics">
-                        <li>Alimentación y yoga</li>
-                        <li>Sistema energético (chakras)</li>
-                        <li>Ayurveda básico</li>
-                        <li>Bienestar integral</li>
-                    </ul>
-                </div>
-
-                <div class="module-card" data-module="4">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <svg viewBox="0 0 64 64" fill="none">
-                                <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
-                                <path d="M32 36v20M22 56h20" stroke="currentColor" stroke-width="2"/>
-                                <path d="M20 28c-4 4-4 12 0 16M44 28c4 4 4 12 0 16" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <span class="module-number">Módulo 04</span>
-                    </div>
-                    <h3 class="module-title">Integración Mente-Cuerpo</h3>
-                    <p class="module-description">Desarrolla técnicas de pranayama, meditación y mindfulness para una conexión profunda entre la mente y el cuerpo.</p>
-                    <ul class="module-topics">
-                        <li>Técnicas de pranayama</li>
-                        <li>Meditación guiada</li>
-                        <li>Mindfulness aplicado</li>
-                        <li>Relajación profunda</li>
-                    </ul>
-                </div>
-
-                <div class="module-card" data-module="5">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <svg viewBox="0 0 64 64" fill="none">
-                                <path d="M16 48V16l16 16 16-16v32" stroke="currentColor" stroke-width="2"/>
-                                <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <span class="module-number">Módulo 05</span>
-                    </div>
-                    <h3 class="module-title">Práctica de Asanas</h3>
-                    <p class="module-description">Domina las posturas fundamentales y avanzadas, aprende a secuenciar clases y a ajustar de forma segura.</p>
-                    <ul class="module-topics">
-                        <li>Asanas fundamentales</li>
-                        <li>Posturas avanzadas</li>
-                        <li>Secuenciación de clases</li>
-                        <li>Ajustes y asistencias</li>
-                    </ul>
-                </div>
-
-                <div class="module-card bonus" data-module="6">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <svg viewBox="0 0 64 64" fill="none">
-                                <path d="M32 8l6 18h18l-14 10 5 18-15-11-15 11 5-18-14-10h18l6-18z" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <span class="module-number">Bonus</span>
-                    </div>
-                    <h3 class="module-title">Yoga como Profesión</h3>
-                    <p class="module-description">Aprende a construir tu carrera como instructor de yoga, desde la creación de marca personal hasta la gestión de clases.</p>
-                    <ul class="module-topics">
-                        <li>Marca personal</li>
-                        <li>Marketing para instructores</li>
-                        <li>Ética profesional</li>
-                        <li>Desarrollo de comunidad</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section class="schedule" id="schedule">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Logística</span>
-                <h2 class="section-title">Horario del Diplomado</h2>
-                <p class="section-description">Sesiones intensivas de fin de semana diseñadas para una inmersión profunda en cada tema.</p>
-            </div>
-            
-            <div class="schedule-wrapper">
-                <div class="schedule-day">
-                    <div class="day-header">
-                        <span class="day-icon">☀️</span>
-                        <h3>Sábado</h3>
-                    </div>
-                    <div class="schedule-items">
-                        <div class="schedule-item">
-                            <span class="time">9:00 - 10:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Práctica de Yoga</span>
-                                <span class="activity-type">Asanas matutinas</span>
+                    
+                    <h2 class="section-title">Bienvenidos a<br><span class="highlight">Anasura Yoga School</span></h2>
+                    
+                    <p class="lead-text">Un espacio donde cuerpo, mente y espíritu se alinean en perfecta armonía. Aquí creemos que el yoga es más que posturas; es un viaje hacia el bienestar integral.</p>
+                    
+                    <p class="body-text">En Anasura Yoga School, promovemos un ambiente inclusivo, donde la calidad humana, la amabilidad y la libertad de expresión son fundamentales. Nuestro enfoque con perspectiva de género garantiza que cada persona sea respetada, valorada y libre para expresarse.</p>
+                    
+                    <div class="pillars">
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <i data-lucide="move-3d"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h4>Alineación Física</h4>
+                                <p>Posturas correctas y seguras</p>
                             </div>
                         </div>
-                        <div class="schedule-item">
-                            <span class="time">10:15 - 12:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Filosofía del Yoga</span>
-                                <span class="activity-type">Sesión teórica</span>
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <i data-lucide="wind"></i>
+                            </div>
+                            <div class="pillar-content">
+                                <h4>Respiración Consciente</h4>
+                                <p>Pranayama y control vital</p>
                             </div>
                         </div>
-                        <div class="schedule-item break">
-                            <span class="time">12:00 - 13:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Receso para comida</span>
-                                <span class="activity-type">Descanso</span>
+                        <div class="pillar">
+                            <div class="pillar-icon">
+                                <i data-lucide="brain"></i>
                             </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">13:00 - 15:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Anatomía y Biomecánica</span>
-                                <span class="activity-type">Teoría y práctica</span>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">15:15 - 17:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Taller Práctico</span>
-                                <span class="activity-type">Aplicación de conceptos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="schedule-day">
-                    <div class="day-header">
-                        <span class="day-icon">🌙</span>
-                        <h3>Domingo</h3>
-                    </div>
-                    <div class="schedule-items">
-                        <div class="schedule-item">
-                            <span class="time">9:00 - 10:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Meditación y Pranayama</span>
-                                <span class="activity-type">Práctica guiada</span>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">10:15 - 12:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Temas Generales</span>
-                                <span class="activity-type">Salud holística</span>
-                            </div>
-                        </div>
-                        <div class="schedule-item break">
-                            <span class="time">12:00 - 13:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Receso para comida</span>
-                                <span class="activity-type">Descanso</span>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">13:00 - 15:00</span>
-                            <div class="activity">
-                                <span class="activity-name">Práctica de Enseñanza</span>
-                                <span class="activity-type">Sesiones supervisadas</span>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">15:15 - 16:30</span>
-                            <div class="activity">
-                                <span class="activity-name">Integración y Cierre</span>
-                                <span class="activity-type">Reflexión grupal</span>
+                            <div class="pillar-content">
+                                <h4>Equilibrio Mental</h4>
+                                <p>Meditación y mindfulness</p>
                             </div>
                         </div>
                     </div>
@@ -433,237 +192,475 @@
         </div>
     </section>
 
-    <!-- Materials Section -->
-    <section class="materials" id="materials">
+    <!-- Acerca del Programa -->
+    <section class="programa" id="programa">
+        <div class="container">
+            <div class="programa-header">
+                <div class="section-label light">
+                    <i data-lucide="book-open"></i>
+                    <span>Acerca del Programa</span>
+                </div>
+                <h2 class="section-title light">Una experiencia transformadora e integral</h2>
+            </div>
+            
+            <div class="programa-grid">
+                <div class="programa-main">
+                    <p class="lead-text light">Nuestro Diplomado en Yoga te invita a vivir una experiencia transformadora diseñada para brindarte las herramientas necesarias no solo para la enseñanza, sino también para la práctica consciente de esta disciplina milenaria.</p>
+                    
+                    <p class="body-text light">Este programa está basado en competencias de aprendizaje, asegurando que adquieras las habilidades necesarias para destacarte como Instructor de Yoga en un mercado competitivo, siempre alineado a los más altos estándares del mercado.</p>
+                    
+                    <p class="body-text light">A lo largo del diplomado, te acompañaremos en un recorrido que abarca el conocimiento profundo, la aplicación práctica y la enseñanza del yoga, con un enfoque holístico que integra cuerpo, mente y espíritu.</p>
+                </div>
+                
+                <div class="programa-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h4>Basado en Competencias</h4>
+                        <p>Programa diseñado para que adquieras habilidades prácticas y medibles</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h4>Maestros Certificados</h4>
+                        <p>Aprende de instructores con certificación Yoga Alliance y años de experiencia</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="activity"></i>
+                        </div>
+                        <h4>Biomecánica</h4>
+                        <p>Comprende cómo el cuerpo se mueve y reacciona en cada postura</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="heart-handshake"></i>
+                        </div>
+                        <h4>Enfoque Holístico</h4>
+                        <p>Integración de cuerpo, mente y espíritu en cada sesión</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temario / Curriculum -->
+    <section class="temario" id="temario">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Todo Incluido</span>
+                <div class="section-label">
+                    <i data-lucide="layout-list"></i>
+                    <span>Programa de Entrenamiento</span>
+                </div>
+                <h2 class="section-title">Áreas de Conocimiento</h2>
+                <p class="section-desc">Un curriculum completo que abarca todos los aspectos fundamentales del yoga</p>
+            </div>
+            
+            <div class="temario-grid">
+                <!-- Áreas de Conocimiento -->
+                <div class="temario-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i data-lucide="book-marked"></i>
+                        </div>
+                        <span class="card-number">01</span>
+                    </div>
+                    <h3>Áreas de Conocimiento</h3>
+                    <ul class="topic-list">
+                        <li><i data-lucide="check"></i>Filosofía de la Yoga</li>
+                        <li><i data-lucide="check"></i>Sistemas de integración (anatomofisiología)</li>
+                        <li><i data-lucide="check"></i>Atención centrada en el alumno</li>
+                        <li><i data-lucide="check"></i>Elementos didácticos para dirigir una clase</li>
+                        <li><i data-lucide="check"></i>Estándar de competencia SEP-CONOCER</li>
+                        <li><i data-lucide="check"></i>Anatomía y biomecánica del cuerpo</li>
+                        <li><i data-lucide="check"></i>Trabajo con TEPT y perspectiva de género</li>
+                    </ul>
+                </div>
+                
+                <!-- Filosofía -->
+                <div class="temario-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i data-lucide="scroll-text"></i>
+                        </div>
+                        <span class="card-number">02</span>
+                    </div>
+                    <h3>Filosofía</h3>
+                    <ul class="topic-list">
+                        <li><i data-lucide="check"></i>Historia del Yoga</li>
+                        <li><i data-lucide="check"></i>¿Qué es sánscrito?</li>
+                        <li><i data-lucide="check"></i>Conceptos Yóguicos</li>
+                        <li><i data-lucide="check"></i>Paradigma y Dogma</li>
+                        <li><i data-lucide="check"></i>Meditación</li>
+                        <li><i data-lucide="check"></i>4 caminos de yoga</li>
+                        <li><i data-lucide="check"></i>8 pasos de yoga</li>
+                        <li><i data-lucide="check"></i>Chakras y Deidades</li>
+                        <li><i data-lucide="check"></i>Yoga Nidra</li>
+                        <li><i data-lucide="check"></i>Sonido y vibración</li>
+                    </ul>
+                </div>
+                
+                <!-- Anatomía -->
+                <div class="temario-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i data-lucide="bone"></i>
+                        </div>
+                        <span class="card-number">03</span>
+                    </div>
+                    <h3>Anatomía del Cuerpo</h3>
+                    <ul class="topic-list">
+                        <li><i data-lucide="check"></i>Biomecánica de la columna vertebral</li>
+                        <li><i data-lucide="check"></i>Biomecánica de pelvis</li>
+                        <li><i data-lucide="check"></i>Biomecánica de cadera</li>
+                        <li><i data-lucide="check"></i>Biomecánica de rodilla</li>
+                        <li><i data-lucide="check"></i>Biomecánica de los pies</li>
+                        <li><i data-lucide="check"></i>Biomecánica de faja abdominal</li>
+                        <li><i data-lucide="check"></i>Biomecánica de hombros</li>
+                        <li><i data-lucide="check"></i>Biomecánica de codos y muñecas</li>
+                    </ul>
+                </div>
+                
+                <!-- Temas Generales -->
+                <div class="temario-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i data-lucide="heart-pulse"></i>
+                        </div>
+                        <span class="card-number">04</span>
+                    </div>
+                    <h3>Temas Generales</h3>
+                    <ul class="topic-list">
+                        <li><i data-lucide="check"></i>Alimentación y yoga</li>
+                        <li><i data-lucide="check"></i>Aparato digestivo</li>
+                        <li><i data-lucide="check"></i>Aparato reproductor</li>
+                        <li><i data-lucide="check"></i>Sistema urinario</li>
+                        <li><i data-lucide="check"></i>Sistema respiratorio</li>
+                        <li><i data-lucide="check"></i>Sistema nervioso</li>
+                        <li><i data-lucide="check"></i>Fisiología sutil</li>
+                        <li><i data-lucide="check"></i>Hidratación</li>
+                    </ul>
+                </div>
+                
+                <!-- Bonus -->
+                <div class="temario-card bonus">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <span class="card-badge">¡Bonus!</span>
+                    </div>
+                    <h3>Yoga como Negocio</h3>
+                    <p class="bonus-desc">Rentabiliza tu aprendizaje y convierte tu pasión en una carrera profesional exitosa</p>
+                    <ul class="topic-list">
+                        <li><i data-lucide="check"></i>Marketing personal</li>
+                        <li><i data-lucide="check"></i>Gestión de clases</li>
+                        <li><i data-lucide="check"></i>Creación de comunidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logística -->
+    <section class="logistica" id="logistica">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <i data-lucide="calendar-days"></i>
+                    <span>Logística del Programa</span>
+                </div>
+                <h2 class="section-title">Horarios y Fechas</h2>
+            </div>
+            
+            <div class="logistica-grid">
+                <!-- Horarios -->
+                <div class="schedule-section">
+                    <h3><i data-lucide="clock"></i> Horario de Sesiones</h3>
+                    
+                    <div class="schedule-cards">
+                        <div class="schedule-card">
+                            <div class="schedule-header">
+                                <i data-lucide="sun"></i>
+                                <h4>Sábado</h4>
+                            </div>
+                            <div class="schedule-items">
+                                <div class="schedule-item">
+                                    <span class="time">9:00 - 10:00</span>
+                                    <span class="activity">Práctica de Yoga</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">10:00 - 11:00</span>
+                                    <span class="activity">Filosofía del Yoga</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">12:00 PM</span>
+                                    <span class="activity">Anatomía (Biomecánica)</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">2:30 PM</span>
+                                    <span class="activity">Tema General</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">3:30 PM</span>
+                                    <span class="activity">El Arte de Enseñar</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">5:00 PM</span>
+                                    <span class="activity">Dinámica de Cierre</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-card">
+                            <div class="schedule-header">
+                                <i data-lucide="moon"></i>
+                                <h4>Domingo</h4>
+                            </div>
+                            <div class="schedule-items">
+                                <div class="schedule-item">
+                                    <span class="time">9:00 - 10:00</span>
+                                    <span class="activity">Práctica de Yoga</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">10:00 - 10:30</span>
+                                    <span class="activity">Tema General</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">10:30 - 12:30</span>
+                                    <span class="activity">El Arte de Enseñar</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">12:30 - 1:30</span>
+                                    <span class="activity">Teoría sobre Meditación</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time">1:30 - 2:00</span>
+                                    <span class="activity">Dinámica de Cierre</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fechas de Módulos -->
+                <div class="dates-section">
+                    <h3><i data-lucide="calendar-check"></i> Fechas de Módulos</h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Junio 21 y 22</span>
+                                <span class="module-name">Módulo 1</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Agosto 30 y 31</span>
+                                <span class="module-name">Módulo 2</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Septiembre 9 y 10</span>
+                                <span class="module-name">Módulo 3</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Septiembre 20 y 21</span>
+                                <span class="module-name">Módulo 4</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">5</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Octubre 11 y 12</span>
+                                <span class="module-name">Módulo 5</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">6</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Noviembre 8 y 9</span>
+                                <span class="module-name">Módulo 6</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">7</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Diciembre 6 y 7</span>
+                                <span class="module-name">Módulo 7</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">8</div>
+                            <div class="timeline-content">
+                                <span class="module-date">Enero 10 y 11</span>
+                                <span class="module-name">Módulo 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Incluido -->
+    <section class="materiales" id="materiales">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <i data-lucide="package"></i>
+                    <span>Todo Incluido</span>
+                </div>
                 <h2 class="section-title">Material del Diplomado</h2>
-                <p class="section-description">Tu inscripción incluye todo el material necesario para tu formación y práctica profesional.</p>
+                <p class="section-desc">Tu inscripción incluye todo el material necesario para tu formación</p>
             </div>
             
-            <div class="materials-grid">
+            <div class="materiales-grid">
                 <div class="material-card">
                     <div class="material-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="4" width="32" height="40" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <line x1="14" y1="12" x2="34" y2="12" stroke="currentColor" stroke-width="2"/>
-                            <line x1="14" y1="20" x2="34" y2="20" stroke="currentColor" stroke-width="2"/>
-                            <line x1="14" y1="28" x2="28" y2="28" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                        <i data-lucide="book-open-text"></i>
                     </div>
-                    <h4>Manual Completo</h4>
-                    <p>Guía de estudio con todo el contenido teórico y práctico del diplomado</p>
+                    <h4>Manual de Entrenamiento</h4>
+                    <p>Manual completo por cada módulo del diplomado</p>
                 </div>
-
+                
                 <div class="material-card">
                     <div class="material-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="16" width="32" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <rect x="12" y="20" width="8" height="12" stroke="currentColor" stroke-width="2"/>
-                            <rect x="28" y="20" width="8" height="12" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                        <i data-lucide="box"></i>
                     </div>
-                    <h4>Bloques de Yoga</h4>
-                    <p>Par de bloques de corcho para apoyo en las posturas</p>
+                    <h4>Par de Blocks</h4>
+                    <p>Bloques de yoga para apoyo en posturas</p>
                 </div>
-
+                
                 <div class="material-card">
                     <div class="material-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <rect x="4" y="18" width="40" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <path d="M4 24h40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
-                        </svg>
+                        <i data-lucide="shirt"></i>
                     </div>
-                    <h4>Cobija de Yoga</h4>
-                    <p>Manta de algodón para soporte y relajación</p>
+                    <h4>Cobija</h4>
+                    <p>Manta de algodón para relajación y soporte</p>
                 </div>
-
+                
                 <div class="material-card">
                     <div class="material-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <path d="M8 24c0-8 8-16 16-16s16 8 16 16" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
-                            <line x1="24" y1="28" x2="24" y2="40" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                        <i data-lucide="cable"></i>
                     </div>
-                    <h4>Cinturón de Yoga</h4>
-                    <p>Strap ajustable para estiramientos profundos</p>
+                    <h4>Cinto</h4>
+                    <p>Strap de yoga para estiramientos profundos</p>
                 </div>
-
+                
                 <div class="material-card featured">
+                    <div class="material-badge">Oficial</div>
                     <div class="material-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <rect x="6" y="8" width="36" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="24" cy="22" r="8" stroke="currentColor" stroke-width="2"/>
-                            <path d="M6 36l8-8 8 8 8-8 12 8" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                        <i data-lucide="award"></i>
                     </div>
-                    <h4>Certificación EC0205</h4>
-                    <p>Certificado oficial con validez nacional SEP-CONOCER</p>
-                    <span class="material-badge">Oficial</span>
+                    <h4>Certificado EC0205</h4>
+                    <p>Certificación oficial SEP-CONOCER (en caso de aprobar)</p>
                 </div>
-
+                
                 <div class="material-card">
                     <div class="material-icon">
-                        <svg viewBox="0 0 48 48" fill="none">
-                            <path d="M24 4l4 8h8l-6 6 2 10-8-5-8 5 2-10-6-6h8l4-8z" stroke="currentColor" stroke-width="2"/>
-                            <rect x="8" y="32" width="32" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+                        <i data-lucide="scroll-text"></i>
                     </div>
-                    <h4>Constancia de Participación</h4>
-                    <p>Diploma de finalización del diplomado Anasura Yoga</p>
+                    <h4>Constancia 200H</h4>
+                    <p>Constancia de participación Diplomado Holístico de Yoga</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dates Timeline Section -->
-    <section class="dates" id="dates">
+    <!-- Instructores -->
+    <section class="instructores" id="instructores">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Calendario 2025</span>
-                <h2 class="section-title">Fechas de los Módulos</h2>
-                <p class="section-description">Planifica tu formación con nuestro calendario de sesiones intensivas de fin de semana.</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker">
-                        <span>1</span>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">15-16 Febrero</span>
-                        <h4>Módulo 1: Filosofía del Yoga</h4>
-                        <p>Introducción a los fundamentos filosóficos y textos clásicos</p>
-                    </div>
+                <div class="section-label">
+                    <i data-lucide="users"></i>
+                    <span>Nuestro Equipo</span>
                 </div>
-
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker">
-                        <span>2</span>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">15-16 Marzo</span>
-                        <h4>Módulo 2: Anatomía y Biomecánica</h4>
-                        <p>Comprensión del cuerpo para una práctica segura</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker">
-                        <span>3</span>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">12-13 Abril</span>
-                        <h4>Módulo 3: Salud Holística</h4>
-                        <p>Integración de yoga con bienestar integral</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker">
-                        <span>4</span>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">17-18 Mayo</span>
-                        <h4>Módulo 4: Mente-Cuerpo</h4>
-                        <p>Pranayama, meditación y mindfulness</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker">
-                        <span>5</span>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">14-15 Junio</span>
-                        <h4>Módulo 5: Práctica de Asanas</h4>
-                        <p>Dominio de posturas y secuenciación</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker bonus">
-                        <span>★</span>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">12-13 Julio</span>
-                        <h4>Bonus: Yoga como Profesión</h4>
-                        <p>Desarrollo profesional y certificación final</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Instructors Section -->
-    <section class="instructors" id="instructors">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nuestro Equipo</span>
                 <h2 class="section-title">Instructores Certificados</h2>
-                <p class="section-description">Aprende de maestros con años de experiencia y dedicación a la enseñanza del yoga.</p>
+                <p class="section-desc">Aprende de maestros certificados y miembros de Yoga Alliance</p>
             </div>
             
-            <div class="instructors-grid">
-                <div class="instructor-card">
+            <div class="instructores-grid">
+                <div class="instructor-card featured">
                     <div class="instructor-image">
-                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80" alt="María Elena García">
-                        <div class="instructor-overlay">
-                            <div class="social-links">
-                                <a href="#" aria-label="Instagram">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
-                                    </svg>
-                                </a>
-                            </div>
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Lic. Julio Macías">
+                        <div class="instructor-badge">
+                            <i data-lucide="crown"></i>
+                            Director
                         </div>
                     </div>
                     <div class="instructor-info">
-                        <h4>María Elena García</h4>
-                        <span class="instructor-role">Directora del Programa</span>
-                        <p>E-RYT 500, certificada en Yoga Terapéutico. 15 años de experiencia en formación de instructores.</p>
+                        <h4>Lic. Julio Macías</h4>
+                        <span class="instructor-role">Fundador y Director</span>
+                        <p>Certificación Yoga Alliance desde 2020-2021 con más de 300 horas de formación. Licenciatura en psicología clínica (UANL), posgrado en psicología con enfoque en violencia de género. Certificado en PNL e Hipnosis Terapéutica. Fundador de Anasura Yoga School en 2021.</p>
+                        <div class="instructor-social">
+                            <a href="#"><i data-lucide="instagram"></i></a>
+                            <a href="#"><i data-lucide="facebook"></i></a>
+                        </div>
                     </div>
                 </div>
-
+                
                 <div class="instructor-card">
                     <div class="instructor-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" alt="Carlos Mendoza">
-                        <div class="instructor-overlay">
-                            <div class="social-links">
-                                <a href="#" aria-label="Instagram">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80" alt="Celeste Nájera">
                     </div>
                     <div class="instructor-info">
-                        <h4>Carlos Mendoza</h4>
-                        <span class="instructor-role">Anatomía y Biomecánica</span>
-                        <p>Fisioterapeuta y profesor de yoga. Especialista en anatomía funcional aplicada al movimiento.</p>
+                        <h4>Celeste Nájera</h4>
+                        <span class="instructor-role">Instructora de Yoga</span>
+                        <p>Maestra certificada por Yoga Alliance desde hace 9 años. Imparte clases de Vinyasa, yoga suave, Yin yoga y meditación.</p>
                     </div>
                 </div>
-
+                
                 <div class="instructor-card">
                     <div class="instructor-image">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Ana Sofía Ruiz">
-                        <div class="instructor-overlay">
-                            <div class="social-links">
-                                <a href="#" aria-label="Instagram">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Nelly Gutiérrez López">
                     </div>
                     <div class="instructor-info">
-                        <h4>Ana Sofía Ruiz</h4>
-                        <span class="instructor-role">Meditación y Pranayama</span>
-                        <p>RYT 500, practicante de Vipassana. Formada en India con 12 años de experiencia en enseñanza.</p>
+                        <h4>Nelly Gutiérrez López</h4>
+                        <span class="instructor-role">Instructora de Yoga</span>
+                        <p>Practicante de yoga desde 2007 con 3 certificaciones ante Yoga Alliance, apasionada del yoga y la meditación.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Claudia Clavada">
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Claudia Clavada</h4>
+                        <span class="instructor-role">Instructora de Yoga</span>
+                        <p>7 años de experiencia con niños y adultos mayores. Instructora de yoga restaurativo, certificada por SADHAK Yoga Institute.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80" alt="Sharon Mireles">
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Sharon Mireles</h4>
+                        <span class="instructor-role">Instructora de Yoga</span>
+                        <p>Instructora certificada especializada en técnicas de respiración y meditación.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" alt="Ariana Rocha">
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Ariana Rocha</h4>
+                        <span class="instructor-role">Instructora de Yoga</span>
+                        <p>Instructora certificada con enfoque en yoga terapéutico y bienestar integral.</p>
                     </div>
                 </div>
             </div>
@@ -675,10 +672,14 @@
         <div class="container">
             <div class="faq-layout">
                 <div class="faq-header">
-                    <span class="section-tag">Resolvemos tus dudas</span>
+                    <div class="section-label">
+                        <i data-lucide="help-circle"></i>
+                        <span>Resolvemos tus dudas</span>
+                    </div>
                     <h2 class="section-title">Preguntas Frecuentes</h2>
-                    <p>¿Tienes alguna pregunta que no está aquí? Escríbenos por WhatsApp y con gusto te ayudamos.</p>
-                    <a href="https://wa.me/5215512345678?text=Hola,%20tengo%20una%20pregunta%20sobre%20el%20Diplomado%20en%20Yoga" class="btn btn-outline" target="_blank">
+                    <p>¿Tienes alguna pregunta que no está aquí?</p>
+                    <a href="https://api.whatsapp.com/send/?phone=528126592009&text=Hola,%20tengo%20una%20pregunta%20sobre%20el%20Diplomado" class="btn btn-outline" target="_blank">
+                        <i data-lucide="message-circle"></i>
                         Contactar por WhatsApp
                     </a>
                 </div>
@@ -686,73 +687,61 @@
                 <div class="faq-list">
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>¿Necesito tener experiencia previa en yoga?</span>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
+                            <span>¿Es necesario tener experiencia?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>No es indispensable tener experiencia previa, aunque es recomendable contar con al menos 6 meses de práctica regular. El diplomado está diseñado para guiarte desde los fundamentos hasta niveles avanzados, pero una base de práctica personal te ayudará a aprovechar mejor la formación.</p>
+                            <p>No, no se necesita tener experiencia, sólo debes estar con las ganas de aprender y con la posibilidad de realizar ejercicio físico. No se requiere de ningún tipo de estudio previo y de ningún nivel de desarrollo académico.</p>
                         </div>
                     </div>
-
+                    
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>¿Quiénes son los instructores del programa?</span>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
+                            <span>¿Quiénes dirigen el diplomado?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Nuestro equipo está conformado por instructores certificados con E-RYT 500 y especializaciones en diversas áreas del yoga. Cada uno tiene más de 10 años de experiencia tanto en práctica personal como en enseñanza, y continúan su formación de manera constante.</p>
+                            <p>Está dirigido por maestras y maestros certificados y miembros de la Asociación Yoga Alliance, para poder impartir clases de yoga y atender este diplomado. Los temas relacionados con la anatomía y fisiología del cuerpo están cubiertos por especialistas.</p>
                         </div>
                     </div>
-
+                    
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>¿Cuáles son las formas de pago disponibles?</span>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
+                            <span>¿De qué manera se puede pagar el diplomado?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Aceptamos transferencia bancaria, depósito en efectivo y pago con tarjeta de crédito o débito. Ofrecemos la opción de pago en parcialidades: un anticipo para apartar tu lugar y el resto en mensualidades durante el diplomado. Contáctanos para conocer los planes disponibles.</p>
+                            <p>La forma más rápida y conveniente es hacer el pago por PayPal con tarjeta de crédito o débito. También puedes hacer depósito bancario o transferencia bancaria, tenemos cuenta en Banamex y Bancomer, o en Oxxo y Seven Eleven. Contáctanos por WhatsApp para más detalles.</p>
                         </div>
                     </div>
-
+                    
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>¿Qué reconocimiento obtendré al finalizar?</span>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
+                            <span>¿Qué reconocimientos recibiré?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Al completar el diplomado recibirás la Certificación EC0205 con validez oficial ante SEP-CONOCER, que te acredita como instructor de yoga a nivel nacional. Además, obtendrás una constancia de participación de Anasura Yoga que detalla las horas de formación completadas.</p>
+                            <p>Al terminar el diplomado puedes solicitar tu certificado EC0205 con validez por SEP-CONOCER y un reconocimiento en yoga holístico por Anasura Yoga respaldado por instructores registrados en Yoga Alliance International con validez en más de 185 países.</p>
                         </div>
                     </div>
-
+                    
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>¿Dónde se realizan los exámenes de certificación?</span>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
+                            <span>¿Dónde se realizan los exámenes?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Los exámenes de certificación EC0205 se realizan en nuestras instalaciones al finalizar el diplomado. El proceso incluye una evaluación teórica y una práctica donde demostrarás tus habilidades como instructor. Nuestro equipo te preparará durante todo el programa para que llegues listo.</p>
+                            <p>Se realizan vía Zoom o en la sala de yoga de la escuela como práctica presencial. El evaluador se conecta y tú diriges tu clase de Yoga y, ahí mismo, al terminar la clase se te entrega el resultado de aprobado o no.</p>
                         </div>
                     </div>
-
+                    
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>¿Puedo recuperar módulos si falto a alguna sesión?</span>
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
+                            <span>¿Qué pasa si no apruebo el examen?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Entendemos que pueden surgir imprevistos. Si no puedes asistir a algún módulo, tienes la opción de recuperarlo en la siguiente generación sin costo adicional. También proporcionamos material de estudio complementario para que puedas mantener tu avance.</p>
+                            <p>Tus profesores te darán seguimiento constante con tus avances, progresos y áreas de oportunidad. A lo largo del diplomado realizarás varios exámenes parciales, por lo que no permitimos que te presentes a la certificación hasta que estemos 100% seguros de que estás listo para aprobar.</p>
                         </div>
                     </div>
                 </div>
@@ -760,49 +749,60 @@
         </div>
     </section>
 
-    <!-- Inscription Section -->
-    <section class="inscription" id="inscription">
+    <!-- Inscripción / CTA -->
+    <section class="inscripcion" id="inscripcion">
         <div class="container">
-            <div class="inscription-wrapper">
-                <div class="inscription-content">
-                    <span class="section-tag">¡Inscríbete ahora!</span>
-                    <h2 class="section-title">Comienza tu transformación</h2>
-                    <p>Completa el formulario y te contactaremos vía WhatsApp para finalizar tu inscripción y resolver cualquier duda.</p>
+            <div class="inscripcion-wrapper">
+                <div class="inscripcion-content">
+                    <div class="section-label light">
+                        <i data-lucide="sparkles"></i>
+                        <span>¡Inscríbete Ahora!</span>
+                    </div>
+                    <h2 class="section-title light">Comienza tu transformación</h2>
+                    <p class="light">Agenda una entrevista con nuestro equipo y resuelve todas tus dudas antes de inscribirte.</p>
                     
-                    <div class="inscription-benefits">
+                    <div class="price-box">
+                        <span class="price-label">Costo por módulo</span>
+                        <span class="price-amount">$2,499 MXN</span>
+                    </div>
+                    
+                    <div class="inscripcion-benefits">
                         <div class="benefit">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
-                            </svg>
-                            <span>Cupo limitado a 15 participantes</span>
+                            <i data-lucide="check-circle-2"></i>
+                            <span>Certificación oficial EC0205</span>
                         </div>
                         <div class="benefit">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
-                            </svg>
-                            <span>Facilidades de pago disponibles</span>
+                            <i data-lucide="check-circle-2"></i>
+                            <span>Material completo incluido</span>
                         </div>
                         <div class="benefit">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
-                            </svg>
-                            <span>Descuento por pronto pago</span>
+                            <i data-lucide="check-circle-2"></i>
+                            <span>Facilidades de pago</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check-circle-2"></i>
+                            <span>Instructores certificados Yoga Alliance</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="inscription-form-wrapper">
-                    <form class="inscription-form" id="inscriptionForm">
+                <div class="inscripcion-form-wrapper">
+                    <form class="inscripcion-form" id="inscriptionForm">
+                        <h3>Agenda tu entrevista</h3>
+                        
                         <div class="form-group">
-                            <label for="nombre">Nombre completo *</label>
+                            <label for="nombre">
+                                <i data-lucide="user"></i>
+                                Nombre completo *
+                            </label>
                             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
                         </div>
                         
                         <div class="form-group">
-                            <label for="whatsapp">Número de WhatsApp *</label>
+                            <label for="whatsapp">
+                                <i data-lucide="phone"></i>
+                                Número de WhatsApp *
+                            </label>
                             <div class="phone-input">
                                 <span class="phone-prefix">+52</span>
                                 <input type="tel" id="whatsapp" name="whatsapp" required placeholder="10 dígitos" pattern="[0-9]{10}">
@@ -810,32 +810,23 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Correo electrónico</label>
+                            <label for="email">
+                                <i data-lucide="mail"></i>
+                                Correo electrónico
+                            </label>
                             <input type="email" id="email" name="email" placeholder="tu@email.com">
                         </div>
                         
                         <div class="form-group">
-                            <label for="modulo">Módulo de interés</label>
-                            <select id="modulo" name="modulo">
-                                <option value="">Selecciona una opción</option>
-                                <option value="completo">Diplomado completo</option>
-                                <option value="filosofia">Módulo 1: Filosofía</option>
-                                <option value="anatomia">Módulo 2: Anatomía</option>
-                                <option value="salud">Módulo 3: Salud Holística</option>
-                                <option value="mente">Módulo 4: Mente-Cuerpo</option>
-                                <option value="asanas">Módulo 5: Asanas</option>
-                            </select>
+                            <label for="mensaje">
+                                <i data-lucide="message-square"></i>
+                                ¿Tienes alguna pregunta?
+                            </label>
+                            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escríbenos tu pregunta..."></textarea>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="mensaje">¿Tienes alguna pregunta?</label>
-                            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escríbenos tu pregunta o comentario"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                            </svg>
+                        <button type="submit" class="btn btn-whatsapp">
+                            <i data-lucide="message-circle"></i>
                             Enviar vía WhatsApp
                         </button>
                     </form>
@@ -847,28 +838,19 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-main">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <span class="logo-icon">☯</span>
-                        <span class="logo-text">Anasura Yoga</span>
-                    </a>
-                    <p>Transformando vidas a través de la práctica consciente del yoga desde 2010.</p>
+                    <img src="images/logo.png" alt="Anasura Yoga" class="footer-logo">
+                    <p>Transformando vidas a través de la práctica consciente del yoga.</p>
                     <div class="footer-social">
-                        <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
-                            </svg>
+                        <a href="https://www.facebook.com/anasurayogaschool" target="_blank" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
                         </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/>
-                            </svg>
+                        <a href="https://www.youtube.com/@anasurayoga2265/videos" target="_blank" aria-label="YouTube">
+                            <i data-lucide="youtube"></i>
                         </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
+                        <a href="https://www.instagram.com/anasurayoga/" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -876,10 +858,11 @@
                 <div class="footer-links">
                     <h4>Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="#about">Acerca del Programa</a></li>
-                        <li><a href="#modules">Temario</a></li>
-                        <li><a href="#schedule">Horario</a></li>
-                        <li><a href="#instructors">Instructores</a></li>
+                        <li><a href="#academia">Nuestra Academia</a></li>
+                        <li><a href="#programa">Acerca del Programa</a></li>
+                        <li><a href="#temario">Programa de Entrenamiento</a></li>
+                        <li><a href="#logistica">Logística</a></li>
+                        <li><a href="#instructores">Instructores</a></li>
                         <li><a href="#faq">Preguntas Frecuentes</a></li>
                     </ul>
                 </div>
@@ -888,38 +871,30 @@
                     <h4>Contacto</h4>
                     <ul>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                            </svg>
-                            <a href="https://wa.me/5215512345678" target="_blank">+52 55 1234 5678</a>
+                            <i data-lucide="message-circle"></i>
+                            <a href="https://api.whatsapp.com/send/?phone=528126592009" target="_blank">+52 812 659 2009</a>
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <a href="mailto:info@anasurayoga.com.mx">info@anasurayoga.com.mx</a>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <span>Ciudad de México, México</span>
+                            <i data-lucide="map-pin"></i>
+                            <span>Monterrey, Nuevo León, México</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Anasura Yoga. Todos los derechos reservados.</p>
+                <p>© 2025 Anasura Yoga School. Todos los derechos reservados.</p>
                 <div class="footer-legal">
-                    <a href="#">Aviso de Privacidad</a>
-                    <a href="#">Términos y Condiciones</a>
+                    <a href="https://diplomadoenyoga.anasurayoga.com.mx/aviso-de-privacidad">Aviso de Privacidad</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send/?phone=528126592009&text=Hola,%20me%20interesa%20el%20Diplomado%20en%20Yoga" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
 
     <script src="app.js"></script>
 </body>
